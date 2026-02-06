@@ -4,8 +4,8 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<title>Cognitive Infrastructure Labs - Simple AI Help for Your Business</title>
-<meta name="description" content="Get AI working for your business - no tech background needed. We guide you every step of the way."/>
+<title>Cognitive Infrastructure Labs - Constructing the Future of Intelligence</title>
+<meta name="description" content="AI and intelligent systems services for small businesses. Practical solutions that save time, reduce costs, and help you grow."/>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet"/>
 <style>
   :root {
@@ -80,6 +80,53 @@
     }
   }
   
+  /* Tagline Banner */
+  .tagline-banner {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-orange) 100%);
+    padding: 12px 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  
+  @media (min-width: 769px) {
+    .tagline-banner {
+      top: 100px;
+      padding: 15px 20px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .tagline-banner {
+      top: 115px;
+    }
+  }
+  
+  .tagline-banner h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+  
+  @media (min-width: 769px) {
+    .tagline-banner h2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .tagline-banner h2 {
+      font-size: 24px;
+    }
+  }
+  
   /* Mobile Menu Toggle */
   .mobile-menu-toggle {
     display: block;
@@ -130,7 +177,7 @@
     display: flex;
     flex-direction: column;
     padding: 30px 0;
-    z-index: 999;
+    z-index: 998;
   }
   
   nav.active {
@@ -201,7 +248,7 @@
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 998;
+    z-index: 997;
   }
   
   .menu-overlay.active {
@@ -216,7 +263,7 @@
   
   /* Hero Section */
   .hero {
-    margin-top: 80px;
+    margin-top: 135px;
     padding: 60px 30px;
     background: linear-gradient(135deg, #f5f8fc 0%, #ffffff 100%);
     position: relative;
@@ -225,14 +272,14 @@
   
   @media (min-width: 769px) {
     .hero {
-      margin-top: 100px;
+      margin-top: 165px;
       padding: 100px 40px;
     }
   }
   
   @media (min-width: 1025px) {
     .hero {
-      margin-top: 115px;
+      margin-top: 180px;
     }
   }
   
@@ -465,8 +512,8 @@
   
   @media (min-width: 769px) {
     .steps-grid {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 50px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
     }
   }
   
@@ -492,16 +539,22 @@
   
   .step-card h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--primary-blue);
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+  }
+  
+  @media (min-width: 769px) {
+    .step-card h3 {
+      font-size: 20px;
+    }
   }
   
   .step-card p {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--text-light);
-    line-height: 1.7;
+    line-height: 1.6;
   }
   
   /* Services Section */
@@ -562,88 +615,95 @@
     font-size: 20px;
     font-weight: 700;
     color: var(--primary-blue);
+    margin-bottom: 15px;
+  }
+  
+  .service-subtitle {
+    font-size: 15px;
+    color: var(--text-dark);
+    font-weight: 600;
     margin-bottom: 12px;
   }
   
-  .service-card p {
-    font-size: 15px;
-    color: var(--text-light);
-    line-height: 1.7;
+  .service-card ul {
+    list-style: none;
+    margin-bottom: 15px;
   }
   
-  /* Testimonials Section */
-  .testimonials {
+  .service-card li {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.7;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+  }
+  
+  .service-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-orange);
+    font-weight: 700;
+  }
+  
+  .service-result {
+    background: rgba(245, 130, 32, 0.1);
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: var(--primary-blue);
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  
+  /* Who For Section */
+  .who-for {
     padding: 80px 30px;
     background: var(--white);
   }
   
   @media (min-width: 769px) {
-    .testimonials {
+    .who-for {
       padding: 100px 40px;
     }
   }
   
-  .testimonials-container {
-    max-width: 1200px;
+  .who-for-container {
+    max-width: 900px;
     margin: 0 auto;
   }
   
-  .testimonials-grid {
+  .who-for-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
-  }
-  
-  @media (min-width: 769px) {
-    .testimonials-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  .testimonial-card {
-    background: var(--light-gray);
-    padding: 35px 30px;
-    border-radius: 10px;
-    border-left: 4px solid var(--primary-orange);
-  }
-  
-  .testimonial-quote {
-    font-size: 16px;
-    color: var(--text-dark);
-    line-height: 1.7;
-    margin-bottom: 20px;
-    font-style: italic;
-  }
-  
-  .testimonial-author {
-    display: flex;
-    align-items: center;
     gap: 15px;
   }
   
-  .author-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-orange) 100%);
+  @media (min-width: 769px) {
+    .who-for-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+  
+  .who-item {
+    background: var(--light-gray);
+    padding: 20px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--text-dark);
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: var(--white);
-    font-weight: 700;
-    font-size: 18px;
+    gap: 12px;
   }
   
-  .author-info h4 {
-    font-size: 16px;
+  .who-item::before {
+    content: '✓';
+    color: var(--primary-orange);
+    font-size: 24px;
     font-weight: 700;
-    color: var(--primary-blue);
-    margin-bottom: 2px;
-  }
-  
-  .author-info p {
-    font-size: 14px;
-    color: var(--text-light);
+    flex-shrink: 0;
   }
   
   /* CTA Section */
@@ -824,13 +884,18 @@
     </button>
     <nav>
       <a href="#home">Home</a>
-      <a href="#how-it-works">How We Help</a>
-      <a href="#what-we-do">What We Do</a>
-      <a href="#success-stories">Success Stories</a>
+      <a href="#how-it-works">How I Work</a>
+      <a href="#what-i-do">What I Do</a>
+      <a href="#who-for">Who This Is For</a>
       <a href="#contact">Get Started</a>
     </nav>
   </div>
 </header>
+
+<!-- Tagline Banner -->
+<div class="tagline-banner">
+  <h2>Constructing the Future of Intelligence!</h2>
+</div>
 
 <!-- Menu Overlay -->
 <div class="menu-overlay"></div>
@@ -838,12 +903,13 @@
 <!-- Hero Section -->
 <section class="hero" id="home">
   <div class="hero-container">
-    <div class="hero-badge">✓ No Tech Background Required</div>
-    <h1>Get AI Working for Your Business</h1>
-    <p class="hero-subtitle">We help business owners like you use AI to solve real problems—without the confusion or complexity. Simple guidance. Real results.</p>
+    <div class="hero-badge">✓ Practical AI for Small Businesses</div>
+    <h1>AI & Intelligent Systems Services for Small Businesses</h1>
+    <p class="hero-subtitle">Small businesses don't need complicated technology. They need practical solutions that save time, reduce costs, and help them grow.</p>
+    <p class="hero-subtitle">I help organizations use AI, automation, and smart systems to streamline operations, improve customer experience, and make better business decisions — without disrupting what already works.</p>
     <div class="hero-buttons">
-      <a href="#how-it-works" class="btn-primary">See How It Works</a>
-      <a href="#contact" class="btn-secondary">Tell Us Your Challenge</a>
+      <a href="#how-it-works" class="btn-primary">See How I Work</a>
+      <a href="#contact" class="btn-secondary">Book a Consultation</a>
     </div>
   </div>
 </section>
@@ -860,12 +926,12 @@
       <div class="trust-label">Years Experience</div>
     </div>
     <div class="trust-item">
-      <div class="trust-number">100%</div>
-      <div class="trust-label">Success Rate</div>
+      <div class="trust-number">5-20+</div>
+      <div class="trust-label">Hours Saved Weekly</div>
     </div>
     <div class="trust-item">
-      <div class="trust-number">$2M+</div>
-      <div class="trust-label">Saved for Clients</div>
+      <div class="trust-number">24/7</div>
+      <div class="trust-label">Customer Support</div>
     </div>
   </div>
 </div>
@@ -875,123 +941,139 @@
   <div class="how-container">
     <div class="section-header">
       <span class="section-badge">Simple Process</span>
-      <h2>How We Help You Get Started with AI</h2>
-      <p>No AI background? No problem. We walk you through every step in plain English.</p>
+      <h2>How I Work</h2>
+      <p>No jargon. No unnecessary complexity. Just systems that make your business run better.</p>
     </div>
     
     <div class="steps-grid">
       <div class="step-card">
         <div class="step-number">1</div>
-        <h3>Tell Us Your Challenge</h3>
-        <p>Share what problems you're facing in your business. No technical jargon needed—just describe it like you would to a friend.</p>
+        <h3>Understand Your Business</h3>
+        <p>I learn how your operations run today</p>
       </div>
       
       <div class="step-card">
         <div class="step-number">2</div>
-        <h3>We Explain Your Options</h3>
-        <p>We'll show you (in simple terms) how AI can help solve your specific problem. We explain everything clearly before moving forward.</p>
+        <h3>Find Quick Wins</h3>
+        <p>We identify areas where automation or AI can help immediately</p>
       </div>
       
       <div class="step-card">
         <div class="step-number">3</div>
-        <h3>We Build It For You</h3>
-        <p>You don't lift a finger on the technical side. We handle everything and train you on using your new AI tools—step by step.</p>
+        <h3>Build & Integrate</h3>
+        <p>I design solutions that fit into your existing systems</p>
+      </div>
+      
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <h3>Train & Support</h3>
+        <p>Your team learns how to use the tools confidently</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Services Section -->
-<section class="services" id="what-we-do">
+<section class="services" id="what-i-do">
   <div class="services-container">
     <div class="section-header">
-      <span class="section-badge">What We Do</span>
-      <h2>We Solve Real Business Problems</h2>
-      <p>Here's how we help businesses like yours save time and money with AI</p>
+      <span class="section-badge">What I Do</span>
+      <h2>Turn Business Challenges Into Automated Workflows</h2>
+      <p>I combine expertise in AI, data systems, and operational optimization to solve everyday business problems</p>
     </div>
     
     <div class="services-grid">
       <div class="service-card">
-        <div class="service-icon">💬</div>
-        <h3>Customer Support Help</h3>
-        <p>Automatically answer customer questions 24/7 so you can focus on growing your business instead of answering the same questions repeatedly.</p>
+        <div class="service-icon">🔹</div>
+        <h3>AI Automation for Daily Work</h3>
+        <p class="service-subtitle">Reduce repetitive tasks and free up your team's time.</p>
+        <ul>
+          <li>Automate data entry, reporting, and document processing</li>
+          <li>AI tools that summarize emails, tickets, or customer messages</li>
+          <li>Intelligent assistants that help staff find answers quickly</li>
+        </ul>
+        <div class="service-result">Result: Less manual work. More productivity.</div>
       </div>
       
       <div class="service-card">
-        <div class="service-icon">📊</div>
-        <h3>Make Sense of Your Data</h3>
-        <p>Turn confusing spreadsheets and reports into clear insights that help you make better business decisions quickly.</p>
+        <div class="service-icon">🔹</div>
+        <h3>Smart Business Dashboards</h3>
+        <p class="service-subtitle">Make decisions based on real data, not guesswork.</p>
+        <ul>
+          <li>Connect your CRM, accounting, and spreadsheets into one view</li>
+          <li>Custom dashboards showing sales, costs, and performance trends</li>
+          <li>Forecasting tools for revenue, inventory, and staffing</li>
+        </ul>
+        <div class="service-result">Result: Clear visibility into how your business is performing.</div>
       </div>
       
       <div class="service-card">
-        <div class="service-icon">⚡</div>
-        <h3>Automate Repetitive Tasks</h3>
-        <p>Stop wasting time on boring, repetitive work. We help you automate tasks like data entry, scheduling, and reporting.</p>
+        <div class="service-icon">🔹</div>
+        <h3>Customer Experience AI</h3>
+        <p class="service-subtitle">Capture more leads and respond faster.</p>
+        <ul>
+          <li>Website and social media AI chat assistants</li>
+          <li>Automated appointment booking and follow-ups</li>
+          <li>Smart email drafting and response tools</li>
+        </ul>
+        <div class="service-result">Result: Faster responses, better service, and increased customer retention.</div>
       </div>
       
       <div class="service-card">
-        <div class="service-icon">🎯</div>
-        <h3>Find Better Customers</h3>
-        <p>Use AI to identify which prospects are most likely to buy, so you can focus your sales efforts where they'll actually pay off.</p>
+        <div class="service-icon">🔹</div>
+        <h3>Workflow & Systems Optimization</h3>
+        <p class="service-subtitle">Fix the bottlenecks slowing your business down.</p>
+        <ul>
+          <li>Map and simplify how your business processes work</li>
+          <li>Eliminate duplicate work and disconnected tools</li>
+          <li>Integrate the software you already use (Microsoft, Google, Zoho, etc.)</li>
+        </ul>
+        <div class="service-result">Result: Smoother operations and less daily frustration.</div>
       </div>
       
       <div class="service-card">
-        <div class="service-icon">🔒</div>
-        <h3>Keep Your Data Safe</h3>
-        <p>We make sure your business information stays secure and follows all the rules—without the technical headaches.</p>
+        <div class="service-icon">🔹</div>
+        <h3>Energy & Resource Efficiency</h3>
+        <p class="service-subtitle">Use data to reduce waste and operating costs.</p>
+        <ul>
+          <li>Monitor energy and utility usage</li>
+          <li>Identify opportunities to lower facility costs</li>
+          <li>Smart scheduling for energy-intensive operations</li>
+        </ul>
+        <div class="service-result">Result: Lower bills and more sustainable operations.</div>
       </div>
       
       <div class="service-card">
-        <div class="service-icon">💰</div>
-        <h3>Save Money on Operations</h3>
-        <p>We find ways to cut costs by making your systems run more efficiently—often saving thousands per month.</p>
+        <div class="service-icon">🔹</div>
+        <h3>AI Readiness & Staff Training</h3>
+        <p class="service-subtitle">Make AI work for your team — safely and effectively.</p>
+        <ul>
+          <li>Practical AI training for employees</li>
+          <li>Guidance on which tools are worth using</li>
+          <li>Custom AI assistants tailored to your business</li>
+        </ul>
+        <div class="service-result">Result: Confident teams using AI to work smarter, not harder.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Testimonials Section -->
-<section class="testimonials" id="success-stories">
-  <div class="testimonials-container">
+<!-- Who This Is For Section -->
+<section class="who-for" id="who-for">
+  <div class="who-for-container">
     <div class="section-header">
-      <span class="section-badge">Success Stories</span>
-      <h2>What Business Owners Say</h2>
-      <p>Real results from real people who had no AI experience before working with us</p>
+      <span class="section-badge">Who This Is For</span>
+      <h2>Built for Real Businesses</h2>
+      <p>Whether you're drowning in manual work or looking to scale, these solutions are designed for you</p>
     </div>
     
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <p class="testimonial-quote">"I had no idea what AI even was. They explained everything in plain English and built a system that saves us 20 hours a week. Game changer."</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">SM</div>
-          <div class="author-info">
-            <h4>Sarah Mitchell</h4>
-            <p>Owner, Retail Business</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="testimonial-card">
-        <p class="testimonial-quote">"Best investment we made this year. They turned our messy customer data into something actually useful. Now we know exactly who to focus on."</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">JC</div>
-          <div class="author-info">
-            <h4>James Chen</h4>
-            <p>Marketing Director</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="testimonial-card">
-        <p class="testimonial-quote">"I was skeptical at first—thought AI was just hype. But they showed me real solutions to real problems. Cut our customer support costs in half."</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">LR</div>
-          <div class="author-info">
-            <h4>Lisa Rodriguez</h4>
-            <p>CEO, Service Company</p>
-          </div>
-        </div>
-      </div>
+    <div class="who-for-grid">
+      <div class="who-item">Small and mid-sized businesses</div>
+      <div class="who-item">Professional services firms</div>
+      <div class="who-item">Healthcare, legal, and financial offices</div>
+      <div class="who-item">Manufacturers, facilities, and operations teams</div>
+      <div class="who-item">Businesses buried in manual processes</div>
+      <div class="who-item">Companies with disconnected tools</div>
     </div>
   </div>
 </section>
@@ -999,10 +1081,10 @@
 <!-- CTA Section -->
 <section class="cta-section" id="contact">
   <div class="cta-container">
-    <h2>Ready to See What AI Can Do For You?</h2>
-    <p>Start with a simple conversation. Tell us about your business challenges, and we'll show you how we can help—in plain English, no pressure.</p>
+    <h2>Save Time. Reduce Costs. Make Better Decisions.</h2>
+    <p>AI should make your business easier to run — not harder. I help you use technology in ways that are practical, affordable, and built for real-world operations.</p>
     <div class="cta-buttons">
-      <a href="#" class="btn-cta-white">Schedule a Free Call</a>
+      <a href="#" class="btn-cta-white">Schedule a Free Discovery Call</a>
     </div>
   </div>
 </section>
@@ -1026,20 +1108,20 @@
       <div class="footer-section">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="#how-it-works">How We Help</a></li>
-          <li><a href="#what-we-do">What We Do</a></li>
-          <li><a href="#success-stories">Success Stories</a></li>
+          <li><a href="#how-it-works">How I Work</a></li>
+          <li><a href="#what-i-do">What I Do</a></li>
+          <li><a href="#who-for">Who This Is For</a></li>
           <li><a href="#contact">Get Started</a></li>
         </ul>
       </div>
       
       <div class="footer-section">
-        <h4>Common Questions</h4>
+        <h4>Services</h4>
         <ul>
-          <li><a href="#">Do I need tech experience?</a></li>
-          <li><a href="#">How much does it cost?</a></li>
-          <li><a href="#">How long does it take?</a></li>
-          <li><a href="#">Will this work for me?</a></li>
+          <li><a href="#">AI Automation</a></li>
+          <li><a href="#">Business Dashboards</a></li>
+          <li><a href="#">Customer AI</a></li>
+          <li><a href="#">Staff Training</a></li>
         </ul>
       </div>
       
